@@ -1,6 +1,6 @@
 module Practice
 
-go 1.24.0
+go 1.23.6
 
 require (
 	github.com/bytedance/sonic v1.12.9 // indirect
