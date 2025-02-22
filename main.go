@@ -1,6 +1,7 @@
 package main 
 
 import "github.com/gin-gonic/gin"
+import "net/http"
 
 func getting(c *gin.Context){
 	c.JSON(200, gin.H{
