@@ -12,7 +12,6 @@ func getting(c *gin.Context){
 func getting2(c *gin.Context){
 	c.JSON(200, gin.H{
 		"messageaaaaa": "pong",
-		"efewwfew": "cfewfre"
 	})
 }
 
