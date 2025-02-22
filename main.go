@@ -2,8 +2,8 @@ package main
 
 import "github.com/gin-gonic/gin"
 
-func getList(C *gin.Context){
-		c.JSON(200, gin.H{
+func getList(c *gin.Context){
+	c.JSON(200, gin.H{
 		"message": "pong",
 	})
 }
@@ -11,5 +11,5 @@ func getList(C *gin.Context){
 func main(){
 	r := gin.Default()
 	r.GET("/ping", getList)
-	r.Run()
+	r.Run(":8181")
 }
