@@ -9,6 +9,14 @@ func getting(c *gin.Context){
 	})
 }
 
+func getting2(c *gin.Context){
+	c.JSON(200, gin.H{
+		"messageaaaaa": "pong",
+		"efewwfew": "cfewfre"
+	})
+}
+
+
 func posting(c *gin.Context) {
     /*
        DB操作など
@@ -26,6 +34,7 @@ func posting(c *gin.Context) {
 func main(){
 	r := gin.Default()
 	r.GET("/get", getting)
+	r.GET("/get2", getting2)
 	r.POST("/post", posting)
 	r.Run()
 }
