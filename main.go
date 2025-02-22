@@ -11,11 +11,11 @@ func getting(c *gin.Context){
 func posting(c *gin.Context) {
     /*
        DB操作など
-    */
     if err != nil{
         c.String(http.StatusInternalServerError, "Server Error")
         return
     }
+		    */
     c.JSON(http.StatusCreated, gin.H{
         "status": "ok",
     })
