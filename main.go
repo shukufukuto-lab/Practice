@@ -11,5 +11,5 @@ func getList(c *gin.Context){
 func main(){
 	r := gin.Default()
 	r.GET("/ping", getList)
-	r.Run(":8181")
+	r.Run()
 }
